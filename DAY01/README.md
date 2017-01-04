@@ -11,7 +11,7 @@ Web 서비스의 Front쪽 개발.
 
 #### Web 서비스의 Front쪽 개발은 무엇으로 구성되어 있나?
 
-`문서` 어떤 구조를 가지고 있음 (HTML)
+`문서` 어떤 구조를 가지고 있음 `HTML`
 ```html
 <div class="window-overlay">
     <div class="window">
@@ -20,7 +20,7 @@ Web 서비스의 Front쪽 개발.
 </div>
 ```
 
-`스타일` 이쁘게, 보기좋게 (CSS)
+`스타일` 이쁘게, 보기좋게 `CSS`
 
 ```css
 .window-overlay {
@@ -30,7 +30,7 @@ Web 서비스의 Front쪽 개발.
 }
 ```
 
-`동작` 사용자와의 인터렉션 (Javascript)
+`동작` 사용자와의 인터렉션 `Javascript`
 
 ```javascript
 let aCardList = [];
@@ -42,17 +42,17 @@ let aCardList = [];
 ```
 
 #### 그래서 Web Front 개발은?
-- 3가지 다른 Language
-- 1가지 Programming
-- 무지 많은 Device 대응
-- 무비 빠른 trend
-- 논리적인 개발자 & 감성적인 다지이너와의 커뮤니케이션
+- 3가지 다른 `Language`
+- 1가지 `Programming`
+- 무지 많은 `Device` 대응
+- 무비 빠른 `trend`
+- 논리적인 개발자 & 감성적인 다지이너와의 `커뮤니케이션``
 
 ---
 
 ### 2. linux
 #### History
-1. 1969년 켄 톰스과데니스리치가 벨 연구소에서 유닉스 OS를 만듬
+1. 1969년 켄 톰슨과데니스리치가 벨 연구소에서 `유닉스 OS`를 만듬
 2. 1991년 라이너스 토발즈라는 대학생이 `Linux` 커널을 만듬
 
 #### 리눅스 배포판 선택
@@ -62,7 +62,10 @@ let aCardList = [];
 - Redhat Enterprize Linux
 - Fedora
 - Cent
-- Mint Linux Gentoo Arch Linux Open SUSE
+- Mint Linux 
+- Gentoo 
+- Arch Linux 
+- Open SUSE
 
 #### Shell이란?
 - OS와 대화하는 프로그램
@@ -70,17 +73,17 @@ let aCardList = [];
 - 맥 사용자는 zsh를 사용하는 것도 좋다
 
 #### 리눅스 Shell 명령
-`pwd`               현재 디렉토리 표시
-`mkdir`             새로운 디렉토리 생성
-`cd`                이동
-`cd ~`              사용자 홈 디렉토리로 이동
-`ls`                현재 디렉토리의 내용을 보여줌
-`cat`               파일 내용 표시
-`history`           명령어 이력 표시
-`cp`, `mv`, `rm`    파일복사, 이동, 삭제
-`echo`, `touch`     파일 생성  
-`ls`, `ll`, `ls -1` 목록 출력
-`say`               음성 출력
+`pwd`               현재 디렉토리 표시 <br>
+`mkdir`             새로운 디렉토리 생성 <br>
+`cd`                이동 <br>
+`cd ~`              사용자 홈 디렉토리로 이동 <br>
+`ls`                현재 디렉토리의 내용을 보여줌 <br>
+`cat`               파일 내용 표시 <br>
+`history`           명령어 이력 표시 <br>
+`cp`, `mv`, `rm`    파일복사, 이동, 삭제 <br>
+`echo`, `touch`     파일 생성  <br> 
+`ls`, `ll`, `ls -1` 목록 출력 <br>
+`say`               음성 출력 <br>
 
 ---
 
@@ -136,7 +139,7 @@ let aCardList = [];
 - `유니코드(unicode)` : 어떤 플랫폼, 어떤 프로그램, 어떤 언어에도 상관없이
 
 #### 프로그래밍(코딩) 언어
-- HTML / Javascript 언어 
-: 인터프리터(interpreter), 프로그래밍 언어의 소스 코드를 바로 실행
-- swift 언어 
-: 컴파일러(compiler), 특정 프로그래밍 언어로 쓰여 있는 문서를 다른 프로그래밍 언어로 옮기는 프로그램
+- `HTML` / `Javascript` 언어 <br>
+: `인터프리터(interpreter)` 프로그래밍 언어의 소스 코드를 바로 실행
+- `swift` 언어 <br>
+: `컴파일러(compiler)` 특정 프로그래밍 언어로 쓰여 있는 문서를 다른 프로그래밍 언어로 옮기는 프로그램
