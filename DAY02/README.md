@@ -112,7 +112,7 @@ typeof d; // boolean
 typeof e; // object
 
 ```
-`typeof`는 완벽하게 `type` 체크를 해 주지 않는다. (`null`, `[]`를 올바르게 인식하지 못한다.)
+>`typeof`는 완벽하게 `type` 체크를 해 주지 않는다. (`null`, `[]`를 올바르게 인식하지 못한다.)
 
 #### `Namespace` 이름 공간. 빈객체. 충돌을 방지
 : `Namespace Pattern`이란? 객체를 활용하는 방법
@@ -200,8 +200,6 @@ calculate_func(10,20,'minus');
 calculate_func(10,20,'multiply');
 
 ```
-
-#### [Debugging JavaScript] (https://developer.chrome.com/devtools#debugging-javascript) 
 
 #### 추천 책
 - [자바스크립트 코딩 기법과 핵심 패턴 JavaScript Patterns] (http://book.daum.net/detail/book.do?bookid=KOR9788966260157)
