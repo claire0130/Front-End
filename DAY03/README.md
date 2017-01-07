@@ -123,7 +123,7 @@ function setName( lastName ) {
 	console.log( 'my mane is ', firstName + lastName );
 }
 
-console.log(globalName); //Kim
+console.log(globalName); // Kim
 console.log(firstName); // firstName is not defined
 ```
 
