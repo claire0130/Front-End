@@ -49,8 +49,8 @@
 
 ##### console Methods
 - `console.log()` 일반적인 로그를 출력
-- `console.dir()` 
-- `console.error()`
+- `console.dir()` 하위 객체를 출력
+- `console.error()` 에러 메시지를 출력
 - `console.time()` 지정된 이름으로 timer를 시작한다. 한 페이지에서 동시에 10,000개의 타이머까지 실행이 가능
 - `console.timeEnd()` 지정된 timer를 중지하고, 타이머 시작으로 부터 경과된 시간을 출력
 - `console.clear()` 콘솔에 기록된 내용들을 지운다.
@@ -181,8 +181,6 @@ arg |  parameter(매개변수)라고 하며, 함수가 동작할 때 필요한 �
 - 만약 3번째 인자가 `multiply` 라면 첫번째 인자와 두번째 인자가 곱한다
 
 ```javascrpt
-
-// if
 function calculate_func(a, b, c) {
 	if( c === 'plus' ) {
 		return a + b;
