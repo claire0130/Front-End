@@ -19,8 +19,8 @@ function getOdd(arg) {
     return num_list.toString();
 }
 
-getOdd(10); // "1,3,5,7,9"
-getOdd(4); // "1,3"
+getOdd(10);
+getOdd(4);
 
 
 /**
@@ -35,7 +35,7 @@ function getRectArea(base, height) {
     return base * height;
 }
 
-getRectArea(10, 4); // 40
+getRectArea(10, 4);
 
 /**
  * ------------------------------------------------------------
@@ -48,8 +48,7 @@ getRectArea(10, 4); // 40
 function getTriangletArea(base, height) {
     return (base * height)/2;
 }
-
-getTriangletArea(10, 4); // 20
+getTriangletArea(10, 4);
 
  /**
   * ------------------------------------------------------------
@@ -60,14 +59,14 @@ getTriangletArea(10, 4); // 20
   */
 
 function getArea(num1, num2) {
-    var rect_result = getRectArea(num1, num2),
-        triang_result = getTriangletArea(num1, num2),
-        arr = [];
+    var rect_result = getRectArea(num1, num2);
+    var triang_result = getTriangletArea(num1, num2);
+    var arr = [];
     arr.push(rect_result, triang_result);
     return arr;
 }
 
-getArea(10,4); // [40, 20]
+getArea(10,4);
 
 /**
  * -------------------------------------------------------------------
@@ -114,36 +113,35 @@ function insertElement(myFriends, position, element) {
 }
 
 var myFriends = insertElement(myFriends, 2, 'james');
-console.log(myFriends); // ["hary", "john", "james", "rock"]
+console.log(myFriends);
 
 /**
  * ----------------------------------------------------------------------------
- * [문제7] 예습
+ * [문제7] 예습 
  * 객체(object)는 다음처럼 name(key)와 value로 구성된 데이터 타입.
  * - new Object() 형태보다는 리터럴 방식인 {key1: value1, key2: value2}가 많이 사용된다.
- * - 어떤 값이든 오브젝트의 속성이 될 수 있다. 즉, 오브젝트 안에 오브젝트도 품을 수 있다.
+ * - 어떤 값이든 객체의 속성이 될 수 있다. 즉, 객체 안에 객체도 품을 수 있다.
+ * - 오브젝트의 속성에 접근할 때는 점(.)과 속성 이름을 사용한다.
+ * - add item (key, value), delete item (key)
  * ----------------------------------------------------------------------------
  */
 
-var myObj = { 'name' : 'codesquad'};
-
-// 1. 특정 name에 해당하는 값을 얻으려면 어떻게 접근해야 할까요?
-// 오브젝트의 속성에 접근할 때는 점(.)과 속성 이름을 사용한다.
-myObj.name;
-myObj['name'];
-
-// 2. 특정 name에 해당하는 값을 수정하려면 어떻게 해야할까요?
-
-
-
-// 3. 새로운 값을 어떻게 추가할 수 있을까요?
-// add item (key, value)
-myObj.subject1 = 'javascript';
-myObj.subject2 = 'Swift';
-myObj.teach = '크롱';
-
-// 4. 특정 값을 삭제하려면 어떻게 해야 할까요?
-//delete item (key)
-delete myObj.subject2;
-
+// - 고민하기 -
+// 특정 name에 해당하는 값을 얻으려면 어떻게 접근해야 할까요?
+// 특정 name에 해당하는 값을 수정하려면 어떻게 해야할까요?
+// 새로운 값을 어떻게 추가할 수 있을까요?
+// 특정 값을 삭제하려면 어떻게 해야 할까요?
 // 객체는 어떤 상황에서 유용하게 쓰일 거 같나요?
+
+var myObj = { 'name' : 'codesquad'};
+console.log(myObj.name); // codesquad
+console.log(myObj['name']); // codesquad
+
+console.log(myObj.subject1 = 'javascript'); 
+console.log(myObj); // {name: "codesquad", subject1: "javascript"}
+
+console.log(myObj.subject2 = 'Swift'); 
+console.log(myObj); // {name: "codesquad", subject1: "javascript", subject2: "Swift"}
+
+console.log(delete myObj.subject2);
+console.log(myObj); // {name: "codesquad", subject1: "javascript"}

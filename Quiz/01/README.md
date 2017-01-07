@@ -1,6 +1,6 @@
 ###### codesquad
 
-#### [Array] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+## [Array] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 - 여러 값을 하나의 이름으로 묶을 때 사용
 - `원소(element)` 배열 안에 있는 하나의 값. 태그를 뜻하는 엘리먼트와 영어 단어가 같다.
 - 어떤 값이든 배열의 원소가 될 수 있다. 즉, 배열 안에 배열도 품을 수 있다.
