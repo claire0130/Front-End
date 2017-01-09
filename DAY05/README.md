@@ -5,6 +5,9 @@
 	- Git이란?
 	- Why VCS
 	- git vs svn
+	- git 환경 설정
+	- 작업 디렉토리(Working directory)
+	- 로컬 저장소(Repositories)
 
 #### Git
 
@@ -51,6 +54,15 @@ $ git config --global user.name
 $ git config --global user.email
 ```
 
+- 프로젝트마다 따로 설정이 가능 <br>
+```
+$ git config user.name
+$ git config user.email
+
+$ vi .git/config
+$ cat .git/config
+```
+
 ##### 작업 디렉토리(Working directory)
 - 1차 저장소
 - 사람이 직접 파일을 변경하는 곳
@@ -72,7 +84,7 @@ $ git config --global user.email
 - `내구성(durability)` 안에 데이터가 사라지면 안된다. 100%가 되어야 한다.
 
 #### git 시작하는 방법
-- 새로운 로컬 저장소 만들기
+- `git init` 새로운 로컬 저장소 만들기
 - `ls -al` 숨김 디렉토리가 보인다. ==> `.git` 로컬 저장소
 ```
 $ git init
@@ -84,17 +96,15 @@ $ ls -al
 $ git status
 ```
 
-- 프로젝트마다 따로 설정이 가능
-```
-$ git config user.name
-$ git config user.email
+- git 인덱스에 변경 내용 추가
 
-$ vi .git/config
-$ cat .git/config
+```
+$ git add
+
 ```
 
-##### 커밋(commit) : 최종 확정본
-- `git log --oneline --graph --decorate` => 단축 `glog`
+- git 커밋(commit) : 최종 확정본 <br>
+: `git log --oneline --graph --decorate` => 단축 `glog`
 
 ```
 $ git commit -m "Create hello.txt"
