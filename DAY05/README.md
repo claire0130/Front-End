@@ -111,3 +111,22 @@ $ git commit -m "Create hello.txt"
 $ git log --oneline
 $ git log --oneline --graph --decorate
 ```
+
+```
+$ git clean -f : 작업(워킹), 로컬() 디렉토링 동일하게 만들어준다.
+```
+
+##### 커밋(commit)
+- 커밋이란 git의 객체
+- 번경이력이자 git에서 가장 중요한 것
+- 모든 커밋은 고유한 아이디를 갖는다
+- 아이디는 긴 16진수인데 보통 앞의 5자리 정도만 사용해도 유니크함
+- `워크플로어` 작업 흐름도
+- `origin` 원본 저장소
+- `Mac` 에서는 맨앞에 아이디를 추가 해준다 `아이디@git주소
+
+```
+$ git remote add origin {git주소}
+$ git push origin master 
+
+```

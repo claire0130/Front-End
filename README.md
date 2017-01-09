@@ -30,3 +30,6 @@
 	- 논리 연산자 (Logical Operators)
 	- for
 	- Array
+
+- [DAY05](./DAY05/README.md)
+	- git
