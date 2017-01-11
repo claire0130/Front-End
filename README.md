@@ -33,3 +33,18 @@
 
 - [DAY05](./DAY05/README.md)
 	- git
+
+- [DAY06](./DAY06/README.md)
+	- .forEach() VS .map() VS .filter()
+
+- [DAY07](./DAY07/README.md)
+	- DOM(Document Object Mode) API
+
+
+
+
+
+
+
+
+
