@@ -9,9 +9,9 @@
 	- 작업 디렉토리(Working directory)
 	- 로컬 저장소(Repositories)
 	- 원격 저장소(Remote)
-	-
+	- git 명령어
 
-<span style="color:#FC00CF; font-size:24px">### Git</span>
+### Git
 
 #### Git이란?
 1. `svn`란 같은 VCS(Version Control System) <br>
@@ -128,19 +128,21 @@ $ git clean -f
 - 모든 커밋은 고유한 아이디를 갖는다
 - 아이디는 긴 16진수인데 보통 앞의 5자리 정도만 사용해도 유니크함
 - `워크플로어` 작업 흐름도
-- `origin` 원본 저장소
+- `origin` 원본 서버 저장소
 - git 커밋(commit) : 최종 확정본 <br>
 : `git log --oneline --graph --decorate` => 단축 `glog`
 
-![git commit Workflow](../Assets/git_commit.png)
+![git commit Workflow](./Assets/git_commit.png)
 
 ```
 $ git commit -m "Create hello.txt"
-$ git log --oneline --graph --decorate
+$ git log --oneline --graph --decorate --all
 
 $ git remote add origin {git주소}
 $ git push origin master
 ```
+
+> 'alias 설정' alias glogs = 'git log --oneline --graph --decorate --all'
 
 #### git clone
 : 새로운 폴더를 생성하고 원격 저장소를 복사해 오는 명령  
@@ -151,17 +153,26 @@ $ git clone a_file b_file
 ```
 
 #### git pull
-: 원격 저장소의 내용을 로컬 저장소에 복사하고 현재 작업 디렉토리까지 내용을 반영
+: 원격 저장소의 내용을 `로컬 저장소에 복사`하고 현재 `작업 디렉토리까지 내용을 반영`
 
 ```
 $ git pull
 ```
 
-#### git checkout
-: 아직 스테이징이나 커밋을 하지 않은 파일의 변경내용을 취소하고 `이전 커밋상태로 되돌리기`
+#### git checkout <br>
+: 아직 스테이징이나 커밋을 하지 않은 파일의 변경내용을 취소하고 `이전 커밋상태로 되돌리기` <br>
+: 작업 디렉토리를 바꾸는 명령어 <br>
 
 ```
 $ git checkout {커밋 아이디}
+```
+
+#### branch 생성
+
+```
+$ git branch
+$ git branch {새로운 브랜치 이름}
+
 ```
 
 #### [Tip] `Mac`에서 `push`가 잘 안 될 경우
