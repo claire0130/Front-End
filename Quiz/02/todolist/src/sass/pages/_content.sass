@@ -1,0 +1,82 @@
+// @content.sass
+
+.container 
+	width: 500px
+	margin: 100px auto 0
+
+.basket
+	margin:
+		left: 1em
+
+	h3 
+		font-weight: bold
+		color: $color-333
+		font-size: 1.5em
+		border:
+			bottom: 2px solid $color-333
+		padding:
+			bottom: 1em
+
+	ol 
+		+reset-list
+		background: $color-f8f8
+		padding: 1em 0 1em 2em
+		margin:
+			top: 1em
+
+	li
+		line-height: 2.5em
+		font-size: 1em
+		color: $color-666
+		font-weight: $spoq-font-weight-400
+
+.controller 
+	margin:
+		top: 2em
+	input 
+		width: 320px
+		float: left
+		margin:
+			left: 2em
+	&::after 
+		+clearfix
+
+	.add-input
+		float: left
+		padding:
+			left: 0.5em
+
+	.remove-input
+		@extend .add-input
+
+	.add
+		float: left
+		font-size: 0.8em
+		margin:
+			left: 2.5em
+		border: 2px solid $button-line-color
+		font-weight: $spoq-font-weight-700
+
+	.remove 
+		@extend .add
+		margin:
+			top: 0.5em
+		padding: 0.8em 1.1em
+
+.addWrap
+	&::after
+		+clearfix
+
+.removeWrap 
+	@extend .addWrap
+
+.message 
+	height: 2em
+
+.active 
+	color: $color-red
+	border:
+		bottom: 2px solid $button-line-color
+	margin: 2em 0 0 1em
+	padding:
+		bottom: 1em
