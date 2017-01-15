@@ -127,23 +127,3 @@ removeButton.addEventListener('click', function() {
 	li = Array.prototype.slice.apply(li);
 	li.splice(inputNum-1, 1);
 });
-
-
-// * 문제점
-// 1. 새로고침하면 등록/삭제된 목록이 사라짐
-// 2. 버튼을 클릭할 때마다 for문을 계속 돌아가는데... 그걸 한번만 돌게 하고 저장하는 방법이 없을까?
-// ㄴ> 기본 목록 + 추가 된 목록 + 삭제 된 목록 = 최신목록을 추출... 
-// 2. 문자열 비교 못했음
-
-
-
-
-
-
-
-
-
-
-
-
-
