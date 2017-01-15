@@ -53,9 +53,12 @@ var removeButton = removeWrap.querySelector('.remove');
 
 
 /**
- * --------------------------------
+ * --------------------------------------------------------------------------------------
  * 메시지 출력 함수
- * --------------------------------
+ * setTimeout()
+ * ㄴ 타이머가 만료 된 후 실행할 함수.
+ * ㄴ https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout
+ * --------------------------------------------------------------------------------------
  */
 
 function getMessage(messageResult) {
@@ -77,12 +80,14 @@ addButton.addEventListener('click', function() {
 	// this : 클릭한 자신.
 	var inputValue = this.previousElementSibling.value;
 
+	// 할일을 넣지 않고 `add버튼`만 클릭할 경우 메시지 출력
 	if ( inputValue === '' ) {
 		var messageResult = createEle('p', '할일 목록을 넣어 주세요');
 		getMessage(messageResult);
 		return;
 	}
 
+	// 할일 목록 체크 후 중복된 할일 있으면 메시지 출력
 	for ( var i =0; i < li.length; i++ ) {
 		// `li`내의 text node만 추출
 		var textLi = li[i].firstChild.nodeValue;
@@ -94,10 +99,15 @@ addButton.addEventListener('click', function() {
 		}
 	}
 
+	// 새로운 할일 목록 추가
 	if ( inputValue !== textLi ) {
 		var newList = createEle('li', inputValue);
 		var addList = ol.appendChild(newList);
-		// `textLi` 유사배열 출력. 배열로 전환
+
+		// `li` 유사배열(NodeList) 출력이 되어 배열로 전환.
+		// `li`가 Array.prototype.slice() 메서드를 마치 자신의 메서드인 양 `li.slice()`와 같은 형태로 메서드를 호출.
+		// `slice()` 메서드에 아무 인자도 넘지지 않을 경우는 전체 배열이 복사가 된다.
+		// `apply()` 메서드를 이용하면 명시적으로 this를 원하는 객체에 바인딩할 수 있음.
 		li = Array.prototype.slice.apply(li);
 		li.push(addList);
 	}
@@ -113,6 +123,7 @@ removeButton.addEventListener('click', function() {
 	// this : 클릭한 자신.
 	var inputNum = this.previousElementSibling.value;
 
+	// `li`의 인덱스는 '0'부터 시작, ol>li는 `1`부터 시작하므로 `inputNum - 1`  
 	if ( li[inputNum - 1] === undefined ) {
 		var messageResult = createEle('p', '삭제할 번호를 확인하세요.');
 		getMessage(messageResult);
