@@ -39,12 +39,3 @@
 
 - [DAY07](./DAY07/README.md)
 	- DOM(Document Object Mode) API
-
-
-
-
-
-
-
-
-

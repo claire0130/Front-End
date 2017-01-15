@@ -20,7 +20,7 @@
 - `IE하위버전(IE 6, 7, 8)`에 쓸 수 없다. `ECMASCript 5 Edition` <br>
 ㄴ> 크로스브라우징 이슈 발생. 하위브라우저 `polyfill` 사용(작은 코드)
 
-> `for` > `.forEach()` : 미묘한 속도 차이가 있다. `for`가 조금 빠르다.
+> `for` > `.forEach()` : 미묘한 속도 차이가 있다. `for`가 조금 빠르다. <br>
 > `jQuery` 사용하는 것보다 `polyfill`를 사용하는것이 좋다.
 
 ### 원시 데이터 VS 복합 데이터
