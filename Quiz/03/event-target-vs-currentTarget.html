@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>event target VS currentTarget &amp; capturing vs bubbling</title>
+    <style>
+      body {
+        margin: 10rem auto;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .container{
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: #a9a9a9;
+      }
+
+      .parent, .child, .grand-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .parent {
+        width: 740px;
+        height: 320px;
+        background: #FD8E08;
+      }
+
+      .child {
+        width: 620px;
+        height: 260px;
+        background: #F200FF;
+      }
+
+      .grand-child {
+        width: 500px;
+        height: 150px;
+        background: #0A5FFF;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    container
+    <div class="parent">
+      parent
+      <div class="child">
+        child
+        <div class="grand-child">grand-child</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function() {
+    'use strict';
+    /**
+     * ------------------------------------------------------------------
+     * target vs currentTarget
+     * addEventListener(‘type’, handler, false);
+     * ㄴ type : 이벤트 타입 
+     * ㄴ handler : function
+     * ㄴ false : capturing(true) vs bubbling(false)
+     * -----------------------------------------------------------------
+     * capturing(true) : 부모노드에서 자식노드로 이벤트가 전파
+     * bubbling(false) : 자식노드부터 이벤트가 발생하여 부모로 이벤트가 전파
+     * ------------------------------------------------------------------
+     */
+
+    var divEles = document.querySelectorAll('div');
+    var eventObj = function(event) {
+        console.log('this: ', this);
+        console.log('event.target:', event.target);
+        console.log('event.currentTarget:', event.currentTarget);
+        console.log('%c----------------------------------------', 'color: #3d9a21');
+    };
+
+    divEles.forEach(function(div, idx) {
+        // capturing(true)
+        div.addEventListener('click', eventObj, true);
+
+        // bubbling(false)
+        // div.addEventListener('click', eventObj, false);
+    });
+
+})();
+</script>
+</body>
+</html>
