@@ -1,9 +1,16 @@
 ###### codesquad
 
 ### Event
-### target vs currentTarget
-- `capturing(true)` 부모노드에서 자식노드로 이벤트가 전파
-- `bubbling(false)` 자식노드부터 이벤트가 발생하여 부모로 이벤트가 전파
+### event.target VS event.currentTarget
+- [event.target] (https://developer.mozilla.org/ko/docs/Web/API/Event/target)
+: 이벤트가 발생한 엘리먼트
+- [event.currentTarget] (https://developer.mozilla.org/ko/docs/Web/API/Event/currentTarget)
+: 이벤트가 발생한 현재 DOM 엘리먼트. 일반적으로 `this`와 같다.
+- [event.preventDefault()] (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+: 기본 동작의 실행을 취소한다.
+- [event.stopPropagation()] (https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
+: 이벤트의 전파를 중단한다.
+
 
 ```html
   <div class="container">
@@ -37,11 +44,12 @@
 - type : 이벤트 타입 
 - handler : function
 - false : capturing(true) vs bubbling(false)
+    - `capturing(true)` 부모노드에서 자식노드로 이벤트가 전파 <br>
+    - `bubbling(false)` 자식노드부터 이벤트가 발생하여 부모로 이벤트가 전파 <br>
 
 
 ```javascript
-.addEventListener(‘type’, handler, false)
-
+.addEventListener(‘type’, handler, false);
 ```
 
 ### attachEvent()
