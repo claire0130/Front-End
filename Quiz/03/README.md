@@ -1,16 +1,19 @@
 ###### codesquad
 
-### Event
-### event.target VS event.currentTarget
-- [event.target] (https://developer.mozilla.org/ko/docs/Web/API/Event/target)
+### Event 객체
+- [event.target] (https://developer.mozilla.org/ko/docs/Web/API/Event/target) <br>
 : 이벤트가 발생한 엘리먼트
-- [event.currentTarget] (https://developer.mozilla.org/ko/docs/Web/API/Event/currentTarget)
+- [event.currentTarget] (https://developer.mozilla.org/ko/docs/Web/API/Event/currentTarget) <br>
 : 이벤트가 발생한 현재 DOM 엘리먼트. 일반적으로 `this`와 같다.
-- [event.preventDefault()] (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
+- [event.preventDefault()] (https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault) <br>
 : 기본 동작의 실행을 취소한다.
-- [event.stopPropagation()] (https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
+- [event.stopPropagation()] (https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) <br>
 : 이벤트의 전파를 중단한다.
+- [jQuery API - event.delegateTarget] (https://api.jquery.com/event.delegateTarget/) <br>
+: `이벤트 위임(event delegation)` 이벤트가 전파된다는 성질을 사용해 자식 요소가 자주 바뀌거나 너무 많을 경우 `공통된 부모 요소`에 이벤트를 걸어두고 처리하는 방식. 
 
+
+### event.target VS event.currentTarget
 
 ```html
   <div class="container">
