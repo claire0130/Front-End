@@ -1,0 +1,60 @@
+// @content.sass
+.main-view
+	margin-top: 2rem
+
+	.main-header
+		text-align: center
+		margin-bottom: 2rem
+
+		.user-id
+			padding: 1rem
+			font-size: 1.5rem
+			font-weight: bold
+
+		.user-sns-info
+			@extend %reset-list
+			color: $color-2626
+			li
+				display: inline-block
+				text-align: center
+
+				.count
+					color: $color-139
+
+				&:after
+					content: '|'
+					padding:
+						right: 0.5rem
+
+	.tab-list
+		@extend %reset-list
+		li
+			width: 25%
+			float: left
+
+			.tab-default
+				display: block
+				padding: 1rem
+				border: 1px solid $color-ccc
+					left: 0
+				font-size: 1rem
+				color: $color-2626
+				font-weight: bold
+				text-align: center
+
+			.tab-active
+				background: $color-tab-bg
+				color: $color-white
+
+		&:after
+			@extend %clearfix
+
+	.tab-contents
+		padding:
+			top: 2rem
+			left: 5rem
+		.content-title
+			font-size: 1.5rem
+			color: $color-tab-bg
+		.content-body
+			font-size: 0.8rem

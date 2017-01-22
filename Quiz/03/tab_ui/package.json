@@ -1,0 +1,24 @@
+{
+  "name": "sass-angular-project",
+  "version": "1.0.0",
+  "description": "Jade + Sass + AngularJS + Browserify Project StartKit with Gulp",
+  "main": "index.js",
+  "keywords": [
+    "sass",
+    "angular",
+    "browserify",
+    "gulp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-if": "^2.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
