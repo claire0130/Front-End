@@ -1,6 +1,6 @@
 ###### codesquad
 
-## DAY 11
+## DAY 12
 - Ajax
 
 ### Ajax(Asynchronous JavaScript And XML)
@@ -8,8 +8,8 @@
 - 쾌적한 UX를 제공해 줄수 있다.
 
 #### Ajax(비동기 통신)를 수행할 객체 생성 `XMLHttpRequest()` 
-- 응답값이 비동기. 비동기로 데이터를 보내느 방법.
-- `MLHttpRequest()` : 함수가 객체를 반환하게 할 수 있다. 그 반환값이 객체가 가능하게 해 준다
+- 응답값이 비동기. 비동기로 데이터를 보내는 방법.
+- `MLHttpRequest()` 함수가 객체를 반환하게 할 수 있다.
 - [Getting Started] (https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
 - [Using XMLHttpRequest] (https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
 
