@@ -4,8 +4,8 @@
 	var xhr = new XMLHttpRequest();
 
 	var getDom = {
-		'tabLink' 	 : document.querySelectorAll('.tab-list a'),
-		'tabActive'  : document.querySelector('.tab-list .tab-active'),
+		'tabLink' : document.querySelectorAll('.tab-list a'),
+		'tabActive' : document.querySelector('.tab-list .tab-active'),
 		'tabSection' : document.querySelector('.tab-contents .tab-content'),
 		'selectMenuItem' : null
 	};
