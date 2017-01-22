@@ -10,7 +10,7 @@
 
 - [DAY02](./DAY02/README.md)
 	- JavaScript
-	- Chrome Browser 
+	- Chrome Browser
 		- Chrome console
 		- 오류 메시지
 	- JavaScript type
@@ -23,7 +23,7 @@
 	- 함수를 반환하는 함수 `Closures`
 	- 유효범위 체인 `Scope Chain`
 	- 즉시실행함수 `IIFE`
-	
+
 - [DAY04](./DAY04/README.md)
 	- 용어 정리
 	- 비교 연산자 (Compare Operators)
@@ -55,5 +55,5 @@
 	- Code Review
 	- [To Do List] 삭제 버튼 추가
 
-- [DAY12](./DAY11/README.md)
+- [DAY12](./DAY12/README.md)
 	- Ajax(Asynchronous JavaScript And XML)
