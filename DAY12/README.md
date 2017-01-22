@@ -1,7 +1,5 @@
 ###### codesquad
 
-- 포트폴리오 작업!
-
 ## DAY 11
 - Ajax
 

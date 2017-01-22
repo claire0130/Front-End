@@ -2,7 +2,7 @@
 
 ## DAY 08
 - function
-- CSS
+- CSS (Cascading Style Sheets)
 
 ### function
 - 함수가 데이터 변경되서 함수가 바뀌면 안된다.
@@ -18,6 +18,7 @@ document.querySelector("ul").insertBefore(cln, list.childNodes[5]);
 > 변수 처리 속도가 빠르다. (dom을 캐시하지 않았을때 성능 이슈 발생)
 
 ### [CSS] (https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- 종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어.
 - CSS는 여러가지 스타일정보를 기반으로 최종적으로 `경쟁`에 의해서 적절한 스타일이 반영 된다.
 - CSS 속성은 하위 태그에 상속된다.
 

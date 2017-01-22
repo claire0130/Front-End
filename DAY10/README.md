@@ -1,9 +1,9 @@
 ###### codesquad
 
 ## DAY 10
-- Code review
+- Code Review
 
-### [Code review] Javascript의 성능 향상을 위한 고려 사항
+### [Code Review] Javascript의 성능 향상을 위한 고려 사항
 - `sort()` DOM을 다시 그린다. 
 - `DOM`을 탐색하지 말고 배열로 만들어서 처리. 
 - `DOM` 조작이 빈번하게 일어나면 생각해 봐야 한다!!!

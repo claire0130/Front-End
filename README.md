@@ -39,3 +39,21 @@
 
 - [DAY07](./DAY07/README.md)
 	- DOM(Document Object Mode) API
+
+- [DAY08](./DAY08/README.md)
+	- function
+	- CSS(Cascading Style Sheets)
+
+- [DAY09](./DAY09/README.md)
+	- HTTP
+	- Algorithm
+
+- [DAY10](./DAY10/README.md)
+	- [Code Review] Javascript의 성능 향상을 위한 고려 사항
+
+- [DAY11](./DAY11/README.md)
+	- Code Review
+	- [To Do List] 삭제 버튼 추가
+
+- [DAY12](./DAY11/README.md)
+	- Ajax(Asynchronous JavaScript And XML)

@@ -1,10 +1,10 @@
 ###### codesquad
 
 ## DAY 11
-- Code review
+- Code Review
 - [To Do List] 삭제 버튼 추가 
 
-### Code review
+### Code Review
 - 이벤트 객체를 사용해라
 - 코드 작성시 정확한 의도를 나타내라.
 - 변수에 할당해서 캐시를 줄여라 `DOM Cache`
