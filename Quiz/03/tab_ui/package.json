@@ -1,7 +1,7 @@
 {
   "name": "sass-angular-project",
   "version": "1.0.0",
-  "description": "Jade + Sass + AngularJS + Browserify Project StartKit with Gulp",
+  "description": "Sass + AngularJS + Browserify Project StartKit with Gulp",
   "main": "index.js",
   "keywords": [
     "sass",
