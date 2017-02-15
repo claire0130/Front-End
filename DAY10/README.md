@@ -89,7 +89,7 @@ button.addEventListener('click', addHandler.addText);
 
 ```
 
-#### 객체를 이용하여 `네임스페이스` 활용
+#### `IIFE패턴`으로 `전역변수를 오염`을 시키지 않는다. `캡슐화` 필요!
 
 ```javascript
 (function() {
