@@ -78,6 +78,3 @@ async로직이 복잡한 경우에는 이를 쉽게 처리할 수 있어야한�
 - 이펙티브 자바스크립트 : http://www.yes24.com/24/goods/9375384?scode=032&OzSrank=16
 - 자바스크립트를 깨우치다 : http://www.yes24.com/24/goods/9198112?scode=032&OzSrank=20
 - 자바스크립트 프로그래밍 : http://www.yes24.com/24/goods/8858182?scode=032&OzSrank=22
-
-
-

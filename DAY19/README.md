@@ -1,6 +1,6 @@
 ###### codesquad
 
-## DAY 21
+## DAY 19
 - Node
 
 ## Node
