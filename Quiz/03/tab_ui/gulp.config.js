@@ -22,7 +22,7 @@ var config = {
     },
     'options': {
       // nested, expanded, compact, compressed
-      'outputStyle': 'expanded'
+      'outputStyle': 'compressed'
     }
   },
 };

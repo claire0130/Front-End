@@ -10,7 +10,7 @@
 - `Database` 저장소
 - `DBMS` 데이터베이스를 관리하는 프로그램
 - `Information` 데이터로부터 추출할 수 있어야 의미있는 정보
-- `Knowledge` 인포메이션에서 한 단계 위. 
+- `Knowledge` 인포메이션에서 한 단계 위.
 
 ### SQL (Structured Query Language)
 - 선언적 언어 cf. 절차적 언어
@@ -19,7 +19,7 @@
 - RDMBS 제어에 사용됨
 
 ### 관계형 데이터 베이스
-- 오라클 : 비용이 비싸다. 
+- 오라클 : 비용이 비싸다.
 - MySQL : 오라클이 매입
 
 ### NoSQL(Not Only SQL)
@@ -29,17 +29,17 @@
 - MongoDB(쉽고 무료), Redis, DyanmoDB, neo4j, Casandra, HBASE, ...
 
 ### 데이터베이스 관련 용어
-#### CAP 이론 : 3가지를 동시에 일어낼수 없다. 3개중에 하나를 희생. 클라우드는 `Consistency` 포기. 
+#### CAP 이론 : 3가지를 동시에 일어낼수 없다. 3개중에 하나를 희생. 클라우드는 `Consistency` 포기.
 - Consistency(일관성) <br>
 : 서버가 일관성이 있다. 모든 사용자가 데이터를 접근했을 때 같은 데이터를 줄 때.. 일관성.(삽입, 수정, 삭제) - 일관성이 조금 없는건 - Availability(가용성) <br>
-: 장애가 적다.(다운타운이 적다.) -> 예를 들면 1년. 525600분 * 0.0001 = 52.56분. 
+: 장애가 적다.(다운타운이 적다.) -> 예를 들면 1년. 525600분 * 0.0001 = 52.56분.
 - Partition Tolerence(분할내성) <br>
 : 서버중에 1대가 죽어도 아무런 지장이 없게...(서버는 최소3대가 기본이다. 홀수대로...)
 
 > CAP 의 `Consistency` 포기한게 `구글doc`.
 
-#### ACID : 대표적인 관계형 데이터 베이스  - 면접때 자주 나옴. ACID는 
-- 은행은 무조건 오라클, MySQL. 
+#### ACID : 대표적인 관계형 데이터 베이스  - 면접때 자주 나옴. ACID는
+- 은행은 무조건 오라클, MySQL.
 - Atomicity(원자성) <br>
 : 중간에 일어나는 일이 없다. 동시에 일어난다. 실패하면 초기화. <br>
 - Consistency(일관성)<br>
@@ -49,23 +49,23 @@
 - Durability(내구도) <br>
 : 시스템 문제, DB 일관성 체크 등을 하더라도 유지되어야 함을 의미
 
-#### 확장성 
+#### 확장성
 - 수평확장 <br>
-: 수평확장이 좋다. 서버를 여러대로 늘리는 것이 좋다. 여러명 사용자를 견딜 수 있다. => 관계형 데이터 
+: 수평확장이 좋다. 서버를 여러대로 늘리는 것이 좋다. 여러명 사용자를 견딜 수 있다. => 관계형 데이터
 - 수직확장 <br>
-: 수직확장는 CPU, 메모리, SSD 등 좋은거 교체. => NoSQL 수직확장이 잘 된다. 관계형 데이터는 안된다. 
+: 수직확장는 CPU, 메모리, SSD 등 좋은거 교체. => NoSQL 수직확장이 잘 된다. 관계형 데이터는 안된다.
 
 ### 관계형 DB VS NoSQL
 - 돈과 관련된 것을 오라클 사용(관계형 DB), 넷플릭스(NoSQL 사용.)
 - Transaction: 전자상거래. => 관계형 DB:지원 VS NoSQL:일부 지원
 
-### Graph DB 
-- [Neo4j] (https://neo4j.com/why-graph-databases/) <br>
+### Graph DB
+- [Neo4j](https://neo4j.com/why-graph-databases/) <br>
 	- 복잡한 관계 처리 지원<br>
 	- 친구 추천 알고리즘, SNS등에 적합 - 미투데이에 사용. <br>
 
 ### Document DB
-#### [MongoDB] (https://www.mongodb.com/) <br>
+#### [MongoDB](https://www.mongodb.com/) <br>
 	- json: 사람도 읽을 수 있다는 것이 장점. 컴퓨터가 쉽게 저장. 예전에는 XML. 그 전에 바이널리 통신.<br>
 	- 아무거나 막 저장<br>
 	- 비교적 빠르고 사용이 간단하다. <br>
@@ -95,22 +95,22 @@
 - Cassandra : 아파치 분산 데이터 베이스
 - Elastic Search: 검색 엔진. 자연어 처리. 비주얼 라이징
 
---- 
+---
 
 ## Docker
 ### Docker란 무엇인가?
 - 도커는 2013년 3월에 출시한 오픈소스 컨테이너 프로젝트
-- 가상 서버. 
+- 가상 서버.
 
-#### docker 다운로드 
-- [GET DOCKER] (https://www.docker.com/products/overview)
+#### docker 다운로드
+- [GET DOCKER](https://www.docker.com/products/overview)
 
 #### docker 명령어
 - `mysqld`의 `d`는 daemon.
-- docker서버가 백그라운드로 둔다. 
+- docker서버가 백그라운드로 둔다.
 - 원본서버를 90%로 대신. 배포가 쉽다
 
-#### mysql 아이디로 터미널 명령어 
+#### mysql 아이디로 터미널 명령어
 ```
 $ docker pull honux77/mysql
 $ docker images
@@ -132,7 +132,7 @@ grant all on clairedb.* to 'claire'@'%';
 4. grant 테이블을 reload함으로서 변경 사항을 즉시 반영
 flush privileges;
 
-#### [Sequel Pro] (https://www.sequelpro.com/)
+#### [Sequel Pro](https://www.sequelpro.com/)
 #### 테이블 생성
 ```
 DROP TABLE IF EXISTS USER;
@@ -144,7 +144,7 @@ CREATE TABLE USER (
 );
 ```
 
-> VARCHAR(64) : 글자 64 입력 가능다. 
+> VARCHAR(64) : 글자 64 입력 가능다.
 
 #### INSERT
 ```
@@ -152,11 +152,11 @@ INSERT INTO USER VALUES(NULL, 'apple@gmail.com', 'apple', 'apple1234');
 SELECT * FROM USER;
 ````
 
-> NULL : 값이 뭔지 모르겠다. 
+> NULL : 값이 뭔지 모르겠다.
 
 #### SELECT
 ```
-SELECT NAME, EMAIL FROM USER; 
+SELECT NAME, EMAIL FROM USER;
 SELECT NAME, EMAIL FROM USER WHERE ID < 5 OR ID > 9;
 ```
 
@@ -173,7 +173,7 @@ UPDATE USER SET NAME = 'claire' WHERE ID = 2;
 ```
 
 > DB는 되돌리가 기능은 없다
-> commit이 자동으로 된다. commit이 되면 undo가 안된다. 
+> commit이 자동으로 된다. commit이 되면 undo가 안된다.
 
 ---
 
@@ -187,12 +187,12 @@ BOARD(ID, USER_ID, TITLE, BODY, POST_DATE)
 - 갱신
 - 삭제
 
-### [MySQL 테이블 생성] (https://dev.mysql.com/doc/refman/5.7/en/create-table.html)
-- PRIMARY KEY 
+### [MySQL 테이블 생성](https://dev.mysql.com/doc/refman/5.7/en/create-table.html)
+- PRIMARY KEY
 - AUTO_INCREMENT
 - ENGINE
 - CHARSET
-- NOT NULL 
+- NOT NULL
 - DEFAULT
 - UNIQUE
 
@@ -202,17 +202,17 @@ DESE 테이블이름;
 SHOW CREATE TABLE 테이블이름;
 ```
 
-##### [데이터 타입] (https://dev.mysql.com/doc/refman/5.7/en/data-types.html) 
+##### [데이터 타입](https://dev.mysql.com/doc/refman/5.7/en/data-types.html)
 - 지형 데이터 (12.5 Extensions for Spatial Data)
 - 용도에 맞춰 적절한 타입을 선택해야 함
 
 ```
-int : 정수 
+int : 정수
 dec(5, 2) : 돈을 반드시 이걸로 지정. 정확한 계산 값이 들어간다.
 DOUBLE : 정확한 계산값이 안들어간다.
 CHAR(8) : 고정 길이 문자
 VARCHAR(64): 가변 길이 문자
-DATETIME : 날짜와 시간 
+DATETIME : 날짜와 시간
 ```
 
 #### 날짜 관련 타입
@@ -221,7 +221,7 @@ DATE : '2000-01-01'
 DATETIME : '9999-11-27 15:37:24.5'
 TIMESTAMP : DATETIME과 동일
 ```
-> 단 TIMESTAMP는 1970 ~ 2038년까지만 저장 가능 
+> 단 TIMESTAMP는 1970 ~ 2038년까지만 저장 가능
 > 현재시간 체워 넣을때 사용.(현재 시간을 자동으로 저장)
 
 #### 날짜 처리하기
@@ -270,7 +270,7 @@ SELECT * FROM USER;
 ```
 
 #### ENGINE
-- 프로그래밍의 ENGINE과 동일 
+- 프로그래밍의 ENGINE과 동일
 - 잘 사용하지 않는 경향이 있음
 
 ```
@@ -305,12 +305,3 @@ INTO TABLE TEST
 FIELDS TERMINATED BY ',';
 SELECT * FROM TEST; SELECT COUNT(B) FROM TEST;
 ```
-
-
-
-
-
-
-
-
-

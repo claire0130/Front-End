@@ -7,11 +7,11 @@
 - 전통적인 웹은 요청사항이 생기면 화면전환(깜빡임)이 생기지만 `Ajax 통신`을 이용하면 부분 제어가 가능하다.
 - 쾌적한 UX를 제공해 줄수 있다.
 
-#### Ajax(비동기 통신)를 수행할 객체 생성 `XMLHttpRequest()` 
+#### Ajax(비동기 통신)를 수행할 객체 생성 `XMLHttpRequest()`
 - 응답값이 비동기. 비동기로 데이터를 보내는 방법.
 - `MLHttpRequest()` 함수가 객체를 반환하게 할 수 있다.
-- [Getting Started] (https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
-- [Using XMLHttpRequest] (https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
+- [Getting Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+- [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
 
 ##### 서버 실행
 ```
@@ -28,13 +28,13 @@ function reqListener (event) {
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "https://api.github.com/repos/code-squad/web-white-common");
 oReq.send();
-``` 
+```
 
 #### Ajax 질문
 - 콜백함수이란?
 : 나중에 실행 되는 함수를 `콜백함수`라고 부른다. (함수의 인자로 받는 함수)
   - ex.) setTimeout(), addEventListener(), forEach(), fillter() <br>
-- Ajax가 라이브러리인가? 
+- Ajax가 라이브러리인가?
 : `XMLHttpRequest()` 객체를 이용해서 사용한다.<br>
 : `Asynchronous JavaScript And XML`. `XML`는 지금 잘 사용하지 않는다. <br>
 : 기술을 설명하는 거다. 라이브러리는 아니다. 개념만 있다. <br>
@@ -45,7 +45,7 @@ oReq.send();
   - `xml`는 용량이 크고 찾기 어렵다 <br>
   - `Json`는 용량이 작고 찾기가 용이하고 직관적이다. <br>
 : `json` object형태로 만든 데이터. (object와 다르다)<br>
-- [jQuery.ajax() 라이브러리] (http://api.jquery.com/jquery.ajax/)
+- [jQuery.ajax() 라이브러리](http://api.jquery.com/jquery.ajax/)
 
 - 언제 사용하는 건가? <br>
   - ex.) Tab UI <br>
@@ -55,8 +55,8 @@ oReq.send();
   ==> 화면에 바로 보이지 않는 콘텐츠는 `Lazy Loading`(스크롤 내렸을 때 콘텐츠가 보이게함).
 
 #### 화면에 배포하는 방법
-- 클라이언트에서 `innerHTML` , `insertAdjacentHTML` 를 통해 뷰에 배포 
-- 서버에서 html를 만들어서 뷰에 배포 
+- 클라이언트에서 `innerHTML` , `insertAdjacentHTML` 를 통해 뷰에 배포
+- 서버에서 html를 만들어서 뷰에 배포
 
 #### JSON(JavaScript Object Notation)
 - 다른 언어간에 객체를 전달하는 포맷으로 많이 사용

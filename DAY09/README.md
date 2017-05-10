@@ -81,9 +81,9 @@ Connection closed by foreign host.
 끊어짐.
 ```
 #### 자료
-- [TCP/IP &amp; IO model] (http://www.slideshare.net/namhyeonuk90/tcp-ip-io-model)
+- [TCP/IP &amp; IO model](http://www.slideshare.net/namhyeonuk90/tcp-ip-io-model)
 - [how to works DNS]
-- [그림으로 배우는 HTTP & Network Basic] (http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788931447897)
+- [그림으로 배우는 HTTP & Network Basic](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788931447897)
 
 ---
 
@@ -93,7 +93,7 @@ Connection closed by foreign host.
 - `알고리듬`이 맞는 표기법이라고 함.
 - 시간의 순서대로 명령어를 정확하게 정의한 집합 (시퀀스(연속, 흐름 - 시간순서))
 
-#### [알고리즘의 조건] (https://ko.wikipedia.org/wiki/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+#### [알고리즘의 조건](https://ko.wikipedia.org/wiki/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 - `입력` 0 또는 그이상 (없어도 되지만 1개 이상)
 - `출력` 정확한 output이 꼭 있어야 한다. (output이 없을 때 메소드)
 --> input이 달라지면 output도 달라지는 것이 알고리즘.
@@ -118,7 +118,7 @@ Connection closed by foreign host.
 - 성능 측정을 위한 한 가지 방법
 - `공간 복잡도`와 `시간 복잡도` 분석이 종종 이루어짐
 
-#### [Asymptotic notation - 점근 표기법] (https://ko.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation)
+#### [Asymptotic notation - 점근 표기법](https://ko.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation)
 - 알고리즘 복잡도를 단순히 하기 위해 사용됨.
 - 여러가지 표기법이 있지만 `Big O` 표기법이 가장 널리 사용됨
 
@@ -181,5 +181,5 @@ print(x)
 ```
 
 #### 추천 서적
-- [누워서 읽는 알고리즘, 임백준] (http://www.hanbit.co.kr/store/books/look.php?p_code=B5686965977)
-- [코딩 인터뷰 완전분석, 인사이트] (http://book.naver.com/bookdb/book_detail.nhn?bid=6986417)
+- [누워서 읽는 알고리즘, 임백준](http://www.hanbit.co.kr/store/books/look.php?p_code=B5686965977)
+- [코딩 인터뷰 완전분석, 인사이트](http://book.naver.com/bookdb/book_detail.nhn?bid=6986417)

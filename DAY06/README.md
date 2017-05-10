@@ -2,17 +2,17 @@
 
 ## DAY 06
 - Array Methods
-	- [.forEach()] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-	- [.map()] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-	- [.filter()] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+	- [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+	- [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+	- [.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - 원시 데이터 VS 복합 데이터
 
 ### .forEach() VS .map() VS .filter()
 
 ##### * 차이점
-  -  | .forEach() | .map() | .filter()
+  -   | .forEach() | .map() | .filter()
 ------| ---------- | ------ | ---------
-반환 | 반환값이 없다 | 반환값이 있다(새로운 배열) |  반환값이 있다(새로운 배열: true를 반환, 그렇지 않으면 false)
+반환   | 반환값이 없다 | 반환값이 있다(새로운 배열) |  반환값이 있다(새로운 배열: true를 반환, 그렇지 않으면 false)
 
 ##### * 공통점 <br>
 - 매개변수가 callback 이고 callback을 실행할 때 this로서 사용하는 값.
