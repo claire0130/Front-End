@@ -12,7 +12,7 @@
 
 ### `Number` call by value 호출
 
-``` 
+```
 var foo = function(num) {
 	num++;
 	console.log(num); // 6
@@ -54,19 +54,19 @@ console.log(b); // 5
 - 함수 호출시 매개별수가 참조일 경우 참조를 전달
 - 원본 객체애 변경겂이 반영됨
 
-### 참조(reference)란? 
+### 참조(reference)란?
 - 실제 변수가 아니라 간접적으로 변수에 접근하는 방법
 - `javascrpt` 기본 타입이 아닌 객체를 생성하면 참조 변수가 만들어짐
 	- array, objcet,...
 
 - `Swift`
 	- class : 참조 생성 (js의 object)
-	- struct : 기본은 값 복사하지만 참조도 사용 가능 
+	- struct : 기본은 값 복사하지만 참조도 사용 가능
 	- 배열, 딕셔너리, 스트링 모두 sturct
 
 ### array, object는 `Call by reference`로 호출
 
-```
+```js
 var a = {'score' : 0};
 var b = a;
 a.score = 60;
@@ -74,7 +74,7 @@ console.log(a); // 60
 console.log(b); // 60
 ```
 
-```
+```js
 function accel(car) {
 	car.speed +=50;
 }
@@ -84,7 +84,7 @@ accel(c);
 console.log(c); // {'name' : 'bmw', 'speed' : 50}
 ```
 
-```
+```js
 function foo(arr) {
 	arr.push(255);
 }
@@ -92,3 +92,4 @@ function foo(arr) {
 var arr = [1,2,3];
 foo(arr);
 console.log(arr); 1,2,3,255
+```

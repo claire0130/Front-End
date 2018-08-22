@@ -17,7 +17,7 @@
 1. `svn`란 같은 VCS(Version Control System) <br>
 	- 버전 관리 시스템 <br>
 	- 협업 <br>
-2. Linus Torvals가 리눅스의 소스 코드 버전 관리용으로 만듬<br>
+2. `Linus Benedict Torvalds`가 리눅스의 소스 코드 버전 관리용으로 만듬<br>
 3. `github`, `안드로이드`(내부에 리눅스가 있다)와 함께 점점 더 유명해짐 <br>
 
 #### Why VCS(Version Control Software)?
